@@ -7,6 +7,14 @@
 
 <!-- Ionicons -->
 <link rel="stylesheet" href="{{ URL::asset('assets/bower_components/Ionicons/css/ionicons.min.css') }}">
+
+<!-- DataTables -->
+<link rel="stylesheet" href="{{ URL::asset('assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
+{{-- <!-- DataTables -->
+<script src="{{ URL::asset('assets/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ URL::asset('assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
+<script src="{{ URL::asset('assets/bower_components/datatables.net-bs/js/dataTables.buttons.min.js') }}"></script> --}}
+
 <!-- Theme style -->
 
 <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -23,7 +31,6 @@
 <!-- bootstrap wysihtml5 - text editor -->
 <link rel="stylesheet" href="{{ URL::asset('assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
 
-
 @if (app()->getLocale() == 'ar')
 {{-- <link rel="stylesheet" href="{{ asset('assets/dist/css/font-awesome-rtl.min.css') }}"> --}}
 <link rel="stylesheet" href="{{ URL::asset('assets/bower_components/font-awesome/css/font-awesome.min.css') }}">
@@ -36,13 +43,14 @@
     body, h1, h2, h3, h4, h5, h6 {
         font-family: 'Cairo', sans-serif !important;
     }
+    
 </style>
 @else
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
 <link rel="stylesheet" href="{{ URL::asset('assets/bower_components/font-awesome/css/font-awesome.min.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('assets/dist/css/AdminLTE.min.css') }}">
 @endif
-
+@yield('css')
 <style>
     .mr-2{
         margin-right: 5px;
@@ -76,12 +84,4 @@
             transform: rotate(360deg);
         }
     }
-
 </style>
-
-
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

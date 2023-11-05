@@ -1,7 +1,7 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.18
+      <b>{{ trans('dashboard_trans.Version') }}</b> 1.0.0
     </div>
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
-    reserved.
+    <strong>{{ trans('dashboard_trans.Copyright') }} &copy; 2023-2024 <a href="www.facebook.com">{{ trans('dashboard_trans.ProfilePerson') }}</a>.</strong>
+    {{ trans('dashboard_trans.Sreserved') }}
   </footer>

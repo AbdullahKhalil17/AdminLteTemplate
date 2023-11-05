@@ -32,13 +32,15 @@
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li><a href="{{ route('Home.Dashboard') }}"><i class="fa fa-dashboard"></i> {{ trans('dashboard_trans.Home') }}</a></li>
+        <li class="active">@yield("title")</li>
       </ol>
     </section>
 
     <!-- Main content -->
-    @yield('content')
+    <section class="content">
+      @yield('content')
+    </section>
 
   </div>
   <!-- /.content-wrapper -->
@@ -47,5 +49,7 @@
 <!-- ./wrapper -->
 
 @include('layouts.footer-script')
+@stack('js')
+@stack('css')
 </body>
 </html>
