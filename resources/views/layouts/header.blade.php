@@ -10,10 +10,6 @@
 
 <!-- DataTables -->
 <link rel="stylesheet" href="{{ URL::asset('assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
-{{-- <!-- DataTables -->
-<script src="{{ URL::asset('assets/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
-<script src="{{ URL::asset('assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
-<script src="{{ URL::asset('assets/bower_components/datatables.net-bs/js/dataTables.buttons.min.js') }}"></script> --}}
 
 <!-- Theme style -->
 
@@ -32,12 +28,12 @@
 <link rel="stylesheet" href="{{ URL::asset('assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
 
 @if (app()->getLocale() == 'ar')
-{{-- <link rel="stylesheet" href="{{ asset('assets/dist/css/font-awesome-rtl.min.css') }}"> --}}
+{{-- <link rel="stylesheet" href="{{ URL::asset('assets/dist/css/font-awesome-rtl.min.css') }}"> --}}
 <link rel="stylesheet" href="{{ URL::asset('assets/bower_components/font-awesome/css/font-awesome.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/dist/css/AdminLTE-rtl.min.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('assets/dist/css/AdminLTE-rtl.min.css') }}">
 <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
-<link rel="stylesheet" href="{{ asset('assets/dist/css/bootstrap-rtl.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/dist/css/rtl.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('assets/dist/css/bootstrap-rtl.min.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('assets/dist/css/rtl.css') }}">
 
 <style>
     body, h1, h2, h3, h4, h5, h6 {
